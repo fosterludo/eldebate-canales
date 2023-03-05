@@ -1,0 +1,101 @@
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  #content {
+    position: relative;
+  }
+  
+  /*animacion de botones */
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Agrega una transición a todas las propiedades */
+  }
+  
+  button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón al pasar el cursor sobre él */
+  }
+          /* Estilos para las pestañas */
+  .tab {
+              overflow: hidden;
+              border: 1px solid #ccc;
+              background-color: #f1f1f1;
+              margin-top: 50px;
+              margin-bottom: 50px;
+          }
+  
+          /* Estilos para los botones de las pestañas */
+  .tab button {
+  
+              background-color: inherit;
+              float: left;
+              border: none;
+              outline: none;
+              cursor: pointer;
+              padding: 14px 16px;
+              transition: 0.3s;
+              font-size: 17px;
+              margin-right: 5px;
+          }
+  
+          /* Estilo para el botón activo */
+  .tab button.active {
+              background-color: #ccc;
+          }
+  
+          /* Contenido de las pestañas */
+  .tabcontent {
+              display: flex;
+              justify-content: center;
+              display:none;
+              padding: 6px 12px;
+              border: 1px solid #ccc;
+              border-top: none;
+          }
+          /* Estilos para las pestañas */
+  .tab {
+      justify-content: center;
+      display: flex;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+     /* display: flex;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center; /* Centra los botones */
+  }
+  
+  /* Estilos para los botones de las pestañas */
+  .tab button {
+      background-color: red; /* Fondo rojo */
+      color: black; /* Texto negro */
+      border: 2px solid white; /* Borde blanco */
+      outline: none;
+      cursor:pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size:17px;
+      margin-right:5px;
+  
+  }
+  
+  /* Estilo para el botón activo */
+  .tab button.active {
+     background-color:#ccc;
+  }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL DEBATE</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>    
+    <!-- Barra de pestañas -->
+    <div class="tab">
+
+        <button class="tablinks active" onclick="openTab(event, 'video1')">INICIO</button>
+        <button class="tablinks" onclick="openTab(event, 'video2')">WARNER</button>
+        <button class="tablinks" onclick="openTab(event, 'video3')">HGTV</button>
+        <button class="tablinks" onclick="openTab(event, 'video4')">HBO PLUS</button>
+    </div>
+
+    <!-- Contenedores de video -->
+    <!--<div id="video1" class="tabcontent" align="center">
+        <p center><iframe allow="encrypted-media" width="50%" height="380" src="https://nosequewea.tk/fl?get=LmN2YXR0di5jb20uYXIvbGl2ZS9jM2Vkcy9DaW5lY2FuYWxIRC9TQV9MaXZlX2Rhc2hfZW5jL0NpbmVjYW5hbEhELm1wZA==&key=NjAwM2U5MmRkMGQ5ZjU0ODMyOTAxNWM5ZTE1ZGQ1Nzg=&key2=MjEzY2Y4NWNiNWY5ZmU1Njk3NTcwMDRhNzdlMDU5NDg=" name="iframe" frameborder="0" scrolling="no" allowfullscreen></iframe></p> 
+        <div id="wrap">-->
+            
+            <video id="vid" autoplay muted loop>
+              <source src="/Paquete de Tipografa Nen de los 80_free (online-video-cutter.com).mp4" type="video/mp4">
+            </video>
+            <div id="content">
+              <!-- contenido en primer plano -->
+              <video autoplay muted loop>
+                <source src="/Paquete de Tipografa Nen de los 80_free (online-video-cutter.com).mp4" type="video/mp4">
+              </video>  
+            </div>      
+          
+    
+
+    <div id="video2" class="tabcontent" align="center">
+        <p center><iframe allow="encrypted-media" width="50%" height="380" src="https://nosequewea.tk/fl?get=LmN2YXR0di5jb20uYXIvbGl2ZS9jN2Vkcy9XYXJuZXJIRC9TQV9MaXZlX2Rhc2hfZW5jXzJBL1dhcm5lckhELm1wZA==&key=MDY5YmQzZjBiNmMyNzk0NjdlMDg1NDlmMTdiZjViZDA=&key2=NWFmYTdlMzY5YTZkZTEwOTM4MThhODVhZjkxMmE3NzU=" frameborder="0" allowfullscreen></iframe></p>
+    </div>
+    
+    <div id="video3" class="tabcontent" align="center">
+        <p center><iframe allow="encrypted-media" width="50%" height="380" src="https://nosequewea.tk/dtvc?get=Ly9kdHZvdHQtY2JjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzExNDQvbWFuaWZlc3QubXBk&key=YmRmYWM0ODZkNTI1NWQyMzk2OTQ1MTAyZDFkMzg4NGY=&key2=OGM0NmU0ZTA4OTA3ODBkNzgxNmUzODg4YjdjNzM4Yzc=" name="iframe" frameborder="0" scrolling="no" allowfullscreen></iframe></p> 
+    </div>
+    
+    <div id="video4" class="tabcontent" align="center">
+        <p center><iframe allow="encrypted-media" width="50%" height="380" src="https://nosequewea.tk/dtvc?get=aHR0cHM6Ly9kdHZvdHQtYWJjLmFrYW1haXplZC5uZXQvZGFzaF9saXZlXzExNDEvbWFuaWZlc3QubXBk&key=Njc5NWEzMDNhOWU4NTE3ZmJjYTM4Mzc2YzBhZjJmNzY=&key2=MWJkYjMxNzIyOTA2NmFkMmQ3NGM0ODE0YTEzOGUxMzY=" name="iframe" frameborder="0" scrolling="no" allowfullscreen></iframe></p> 
+    </div><br><br>
+    
+        <script>
+            function openTab(evt, tabName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+    
+            // Muestra el primer video por defecto
+            document.getElementById("video1").style.display = "block";
+        </script>
+    
+    </body>
+    </html>
